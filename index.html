@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Database Simulation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"] {
+            margin-right: 10px;
+            padding: 5px;
+        }
+
+        button {
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Database Simulation</h1>
+
+    <div>
+        <h2>Rows:</h2>
+        <ul id="rows-list"></ul>
+    </div>
+
+    <div>
+        <h2>Add New Row:</h2>
+        <input type="text" id="key-input" placeholder="Key">
+        <input type="text" id="value-input" placeholder="Value">
+        <button id="insert-button">Insert</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
